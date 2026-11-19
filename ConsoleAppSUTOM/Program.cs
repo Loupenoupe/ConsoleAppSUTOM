@@ -22,9 +22,9 @@
                 Console.Write($"{i+1} ");
             }
             Console.WriteLine("\n");
+            Console.WriteLine($"{motsDeviner[0]}");
             for (int i = 0; i < 6; i++)
             {
-                Console.WriteLine($"{motsDeviner[0]}");
                 string reponse = Console.ReadLine();
                 Char[] guess = reponse.ToUpper().ToCharArray();
 
@@ -40,7 +40,7 @@
                         Console.WriteLine($"{motMystere}");
                         Console.WriteLine("Félicitations ! Vous avez trouvé le mot mystère !");
                         Console.ResetColor();
-                        break;
+                        Environment.Exit(0);
                     }
                     else
                     {
